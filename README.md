@@ -7,7 +7,7 @@
 Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+This project shows data from three different cities on a shared bike company.
 
 ### Files used
 Include the files used
