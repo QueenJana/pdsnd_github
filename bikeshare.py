@@ -11,7 +11,7 @@ DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sun
 def get_filters():
 
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+
     while True:
         city = input('Please choose a city: Chicago, New York City or Washington: ').lower()
         if city not in CITY_DATA:
@@ -19,7 +19,7 @@ def get_filters():
             continue
         else:
             break
-    # TO DO: get user input for month (all, january, february, ... , june)
+
     month = input('Please choose a month between january and june or all of them (by typing all)\n').lower()
     while True:
         if month in MONTHS:
@@ -33,7 +33,7 @@ def get_filters():
             month = input('Please choose a month between january and june or all of them (by typing all)\n').lower()
 
 
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+
     day = input('Please chooose a day of the week between monday and sunday or all of them (by typing all)').lower()
     while True:
         if day in DAYS:
@@ -94,16 +94,13 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # TO DO: display most commonly used start station
     start_station = df['Start Station'].mode()[0]
     print('Most common Start station: ', start_station)
 
-    # TO DO: display most commonly used end station
     end_station = df['End Station'].mode()[0]
     print('Most common End station: ', end_station)
 
 
-    # display most frequent combination of start station and end station trip
     combined_station = (df['Start Station'] + ' - ' + df['End Station']).value_counts().idxmax()
     print('Most frequent combined stations: ', combined_station)
 
@@ -118,7 +115,6 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # display total travel time
-
     total_travel_time = df['Trip Duration'].sum()
     print('the total travel time:', total_travel_time, 'in seconds')
 
