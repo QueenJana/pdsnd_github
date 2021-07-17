@@ -10,7 +10,7 @@ Bikeshare Project
 This project shows data from three different cities on a shared bike company.
 
 ### Files used
-Include the files used
+The files beeing used are .csv files with Date from three different cities, and the python script for evaluations
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
