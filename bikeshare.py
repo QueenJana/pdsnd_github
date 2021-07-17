@@ -10,7 +10,15 @@ DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sun
 
 def get_filters():
 
+
     print('Hello! Let\'s explore some US bikeshare data!')
+
+
+    print('Hello! Let\'s explore some US bikeshare data!')
+    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+
+    print('Hello! Do you want to explore Bikeshare data?')
+    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while True:
         city = input('Please choose a city: Chicago, New York City or Washington: ').lower()
@@ -34,7 +42,15 @@ def get_filters():
 
 
 
+
     day = input('Please chooose a day of the week between monday and sunday or all of them (by typing all)').lower()
+
+    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    day = input('Please chooose a day of the week between monday and sunday or all of them (by typing all)').lower()
+
+    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    day = input('choose a day from monday to sunday or the whole week').lower()
+
     while True:
         if day in DAYS:
             print(day)
@@ -69,7 +85,6 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
