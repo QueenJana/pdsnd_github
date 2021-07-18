@@ -10,8 +10,16 @@ DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sun
 
 def get_filters():
 
+<<<<<<< HEAD
     print('Hello! Let\'s explore some US bikeshare data!')
 
+||||||| parent of 1beb8f5 (Changed the welcome message for the users)
+    print('Hello! Let\'s explore some US bikeshare data!')
+    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+=======
+    print('Hello! Do you want to explore Bikeshare data?')
+    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+>>>>>>> 1beb8f5 (Changed the welcome message for the users)
     while True:
         city = input('Please choose a city: Chicago, New York City or Washington: ').lower()
         if city not in CITY_DATA:
