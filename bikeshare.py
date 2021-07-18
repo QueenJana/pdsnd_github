@@ -11,15 +11,31 @@ DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sun
 def get_filters():
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     print('Hello! Let\'s explore some US bikeshare data!')
 
 ||||||| parent of 1beb8f5 (Changed the welcome message for the users)
+||||||| bff98ee
+=======
+
+    print('Hello! Let\'s explore some US bikeshare data!')
+
+
+>>>>>>> 21065bb20f35f2c069e10fb4331b80d020156485
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+<<<<<<< HEAD
 =======
     print('Hello! Do you want to explore Bikeshare data?')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 >>>>>>> 1beb8f5 (Changed the welcome message for the users)
+||||||| bff98ee
+=======
+
+    print('Hello! Do you want to explore Bikeshare data?')
+    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+
+>>>>>>> 21065bb20f35f2c069e10fb4331b80d020156485
     while True:
         city = input('Please choose a city: Chicago, New York City or Washington: ').lower()
         if city not in CITY_DATA:
@@ -42,15 +58,31 @@ def get_filters():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     day = input('Please chooose a day of the week between monday and sunday or all of them (by typing all)').lower()
 ||||||| parent of 3d36fd8 (Improved the "Day input" function)
+||||||| bff98ee
+=======
+
+
+    day = input('Please chooose a day of the week between monday and sunday or all of them (by typing all)').lower()
+
+>>>>>>> 21065bb20f35f2c069e10fb4331b80d020156485
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('Please chooose a day of the week between monday and sunday or all of them (by typing all)').lower()
+<<<<<<< HEAD
 =======
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('choose a day from monday to sunday or the whole week').lower()
 >>>>>>> 3d36fd8 (Improved the "Day input" function)
+||||||| bff98ee
+=======
+
+    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    day = input('choose a day from monday to sunday or the whole week').lower()
+
+>>>>>>> 21065bb20f35f2c069e10fb4331b80d020156485
     while True:
         if day in DAYS:
             print(day)
